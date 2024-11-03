@@ -74,6 +74,10 @@ class ProductResource extends Resource
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Created At')
                     ->sortable(),
+
+                Tables\Columns\TextColumn::make('updated_at')
+                ->label('Updated At')
+                ->sortable(),
             ])
             ->filters([
                 // Define any filters you want here

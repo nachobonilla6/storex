@@ -14,5 +14,9 @@ class ProductController extends Controller
 
         // Pasar la variable a la vista 'welcome'
         return view('welcome', compact('pokemons'));
+        
     }
+
+
+    
 }

@@ -4,7 +4,6 @@ namespace App\Filament\Resources\ProductResource\Pages;
 
 use App\Filament\Resources\ProductResource;
 use Filament\Resources\Pages\CreateRecord;
-use Illuminate\Support\Facades\Redirect;
 
 class CreateProduct extends CreateRecord
 {
@@ -13,6 +12,6 @@ class CreateProduct extends CreateRecord
     protected function afterCreate(): void
     {
         // Redirigir a la lista de productos después de crear uno
-        Redirect::to(route('filament.admin.resources.products.index'));
+        $this->redirect(route('filament.admin.resources.products.index'));
     }
 }

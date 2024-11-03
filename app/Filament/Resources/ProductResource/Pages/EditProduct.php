@@ -1,10 +1,12 @@
 <?php
+
+
+
 namespace App\Filament\Resources\ProductResource\Pages;
 
 use App\Filament\Resources\ProductResource;
-use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
-use Filament\Forms;
+use Filament\Actions;
 
 class EditProduct extends EditRecord
 {
@@ -28,20 +30,22 @@ class EditProduct extends EditRecord
             Forms\Components\TextInput::make('image_url')
                 ->label('Image URL')
                 ->required()
-                ->afterStateUpdated(fn ($state) => $this->previewImage($state)),
+                ->reactive()
+                ->afterStateUpdated(fn ($state, callable $set) => $set('imagePreview', $state)),
 
-            // Aquí se agrega el componente para la vista previa de la imagen
-            Forms\Components\View::make('filament::components.image-preview')
+            Forms\Components\Html::make('image_preview')
                 ->label('Image Preview')
-                ->viewData(fn ($record) => [
-                    'image_url' => $record->image_url,
-                ]),
+                ->html(fn ($get) => $get('imagePreview') ? '<div style="margin-top: 10px;"><img src="' . $get('imagePreview') . '" alt="Image Preview" style="max-width: 100%; height: auto; border: 1px solid #ddd; padding: 5px; border-radius: 4px;"></div>' : '<p style="margin-top: 10px; color: #888;">No image to preview</p>'),
         ];
     }
 
-    protected function previewImage($url)
+    protected function getActions(): array
     {
-        // Actualiza el estado de la imagen aquí
-        $this->form->getState()['image_url'] = $url;
+        return [
+            Actions\Action::make('createNewProduct')
+                ->label('New Product')
+                ->url(route('filament.admin.resources.products.create')) // Asegúrate de que esta ruta sea la correcta
+                ->color('success'), // Cambia el color según lo que necesites
+        ];
     }
 }
