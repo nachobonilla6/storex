@@ -14,7 +14,8 @@ class UserResource extends Resource
 {
     protected static ?string $model = User::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-shield-check';
+    protected static ?string $label = 'Empleados';
 
     public static function form(Form $form): Form
     {
@@ -41,9 +42,9 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name')->label('Name'),
-                Tables\Columns\TextColumn::make('email')->label('Email'),
-                Tables\Columns\TextColumn::make('created_at')->label('Created At')->date(),
+            Tables\Columns\TextColumn::make('name')->label('Nombre'),
+            Tables\Columns\TextColumn::make('email')->label('Correo Electrónico'),
+            Tables\Columns\TextColumn::make('created_at')->label('Creado En')->date(),
             ])
             ->filters([
                 //

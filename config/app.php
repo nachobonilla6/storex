@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+'name' => 'Acedu Site',
 
     /*
     |--------------------------------------------------------------------------
@@ -122,5 +122,16 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Filament Logo Configuration
+    |--------------------------------------------------------------------------
+    |
+    | You can specify the logo of the Filament panel here. You can point to
+    | an image URL or use a path relative to the public folder.
+    |
+    */
+
 
 ];

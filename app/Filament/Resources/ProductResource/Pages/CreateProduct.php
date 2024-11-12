@@ -12,6 +12,6 @@ class CreateProduct extends CreateRecord
     protected function afterCreate(): void
     {
         // Redirigir a la lista de productos después de crear uno
-        $this->redirect(route('filament.admin.resources.products.index'));
+        $this->redirect($this->getResource()::getUrl('index'));
     }
 }

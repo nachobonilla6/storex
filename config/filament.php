@@ -2,18 +2,6 @@
 
 return [
 
-    /*
-    |--------------------------------------------------------------------------
-    | Broadcasting
-    |--------------------------------------------------------------------------
-    |
-    | By uncommenting the Laravel Echo configuration, you may connect Filament
-    | to any Pusher-compatible websockets server.
-    |
-    | This will allow your users to receive real-time notifications.
-    |
-    */
-
     'broadcasting' => [
 
         // 'echo' => [
@@ -85,5 +73,19 @@ return [
     */
 
     'livewire_loading_delay' => 'default',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Theme Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Here you can customize the color theme of Filament. Set the button color.
+    |
+    */
+
+    'theme' => [
+        'dark' => true, // Cambia a true si quieres el modo oscuro
+
+    ],
 
 ];

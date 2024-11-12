@@ -1,279 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- basic -->
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <!-- mobile metas -->
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-     <!-- site metas -->
-     <title>Fashion</title>
-     <meta name="keywords" content="">
-     <meta name="description" content="">
-     <meta name="author" content="">
-     <!-- bootstrap css -->
-     <link rel="stylesheet" type="text/css" href="cssy/bootstrap.min.css">
-     <!-- style css -->
-     <link rel="stylesheet" type="text/css" href="cssy/style.css">
-     <!-- Responsive-->
-     <link rel="stylesheet" href="cssy/responsive.css">
-     <!-- fevicon -->
-     <link rel="icon" href="imagesy/fevicon.png" type="image/gif" />
-     <!-- Scrollbar Custom CSS -->
-     <link rel="stylesheet" href="cssy/jquery.mCustomScrollbar.min.css">
-     <!-- Tweaks for older IEs-->
-     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-     <!-- fonts -->
-     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-     <!-- font awesome -->
-     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <!--  -->
-     <!-- owl stylesheets -->
-     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-     <link rel="stylesheet" href="cssy/owl.carousel.min.css">
-     <link rel="stylesheet" href="cssy/owl.theme.default.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-       <style>
-        .tshirt_img {
-    width: 100%; /* Asegura que el contenedor use el 100% del espacio disponible */
-    max-width: 300px; /* Ajusta el tamaño máximo según tu diseño */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Catálogo en Línea</title>
+   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-.tshirt_img img {
-    width: 100%;
-    height: auto; /* Mantiene la proporción */
-    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
-    border-radius: 10px; /* Opcional: redondea las esquinas de la imagen */
-}
-       </style>
-     
-     
-     <!-- banner bg main start -->
-      <div class="banner_bg_main">
-         <!-- header top section start -->
-         <div class="container">
-            <div class="header_section_top">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="custom_menu">
-                        <ul>
-                           <li><a href="#">Best Sellers</a></li>
-                           <li><a href="#">Gift Ideas</a></li>
-                           <li><a href="#">New Releases</a></li>
-                           <li><a href="#">Today's Deals</a></li>
-                           <li><a href="#">Customer Service</a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- header top section start -->
-         <!-- logo section start -->
-         <div class="logo_section">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12">
-                     <div class="logo"><a href="index.html"><img src="imagesy/logo.png"></a></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- logo section end -->
-         <!-- header section start -->
-         <div class="header_section">
-            <div class="container">
-               <div class="containt_main">
-                  <div id="mySidenav" class="sidenav">
-                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                     <a href="index.html">Home</a>
-                     <a href="fashion.html">Fashion</a>
-                     <a href="electronic.html">Electronic</a>
-                     <a href="jewellery.html">Jewellery</a>
-                  </div>
-                  <span class="toggle_icon" onclick="openNav()"><img src="imagesy/toggle-icon.png"></span>
-                  <div class="dropdown">
-                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">All Category 
-                     </button>
-                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                     </div>
-                  </div>
-                  <div class="main">
-                     <!-- Another variation with a button -->
-                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search this blog">
-                        <div class="input-group-append">
-                           <button class="btn btn-secondary" type="button" style="background-color: #f26522; border-color:#f26522 ">
-                           <i class="fa fa-search"></i>
-                           </button>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="header_box">
-                     <div class="lang_box ">
-                        <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
-                        <img src="imagesy/flag-uk.png" alt="flag" class="mr-2 " title="United Kingdom"> English <i class="fa fa-angle-down ml-2" aria-hidden="true"></i>
-                        </a>
-                        <div class="dropdown-menu ">
-                           <a href="#" class="dropdown-item">
-                           <img src="imagesy/flag-france.png" class="mr-2" alt="flag">
-                           French
-                           </a>
-                        </div>
-                     </div>
-                     <div class="login_menu">
-                        <ul>
-                           <li><a href="#">
-                              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                              <span class="padding_10">Cart</span></a>
-                           </li>
-                           <li><a href="#">
-                              <i class="fa fa-user" aria-hidden="true"></i>
-                              <span class="padding_10">Cart</span></a>
-                           </li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- header section end -->
-         <!-- banner section start -->
-         <div class="banner_section layout_padding">
-            <div class="container">
-               <div id="my_slider" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <h1 class="banner_taital">Get Start <br>Your favriot shoping</h1>
-                              <div class="buynow_bt"><a href="#">Buy Now</a></div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
-                  </a>
-               </div>
-            </div>
-         </div>
-         <!-- banner section end -->
+   <style>
+      .square-img {
+         position: relative;
+         width: 100%;
+         padding-bottom: 100%; /* 1:1 Aspect Ratio */
+         overflow: hidden;
+      }
+      .square-img img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+      .whatsapp-button {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 10px;
+         background-color: #25D366;
+         color: white;
+         border-radius: 5px;
+         text-decoration: none;
+         font-size: 16px;
+         width: 100%;
+         margin-top: 10px;
+      }
+      .whatsapp-button i {
+         margin-right: 8px;
+      }
+   </style>
+</head>
+<body>
+
+
+   <!-- Barra de navegación -->
+   <nav class="navbar-custom navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #25d366; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 0 0 10px 10px;">
+      <a class="navbar-brand" href="{{ url('/') }}" style="color: white;">
+         <img src="{{ asset('imagesy/logo-dark.png') }}" alt="Acedu Site" style="height: 20px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+         <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar" style="width: auto;">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+         </form>
       </div>
-      <!-- banner bg main end -->
-<!-- fashion section start -->
-<div class="fashion_section">
-    <div id="main_slider" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            @foreach ($pokemons->chunk(6) as $chunk)
-                <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
-                    <div class="container">
-                        <h1 class="fashion_taital">Electronics</h1>o
-                        <div class="fashion_section_2">
-                            <div class="row">
-                                @foreach ($chunk as $pokemon)
-                                    <div class="col-lg-4 col-sm-4">
-                                        <div class="box_main">
-                                            <h4 class="shirt_text">{{ $pokemon->name }}</h4>
-                                            <p class="price_text">Price <span style="color: #262626;">$ {{ $pokemon->price }}</span></p>
-                                            <div class="tshirt_img">
-                                                <img src="{{ $pokemon->image_url }}" alt="{{ $pokemon->name }}">
-                                            </div>
-                                            <div class="btn_main">
-                                                <!-- Opcional: Agrega botones adicionales aquí -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="#" style="color: white; font-family: 'Roboto', sans-serif;">Iniciar sesión</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+               <span class="nav-link" style="color: white; font-family: 'Roboto', sans-serif;">|</span>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#" style="color: white; font-family: 'Roboto', sans-serif;">Registro</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+               <a class="nav-link" href="#" style="color: white; font-family: 'Roboto', sans-serif;"><i class="fas fa-globe-americas"></i></a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+
+
+
+
+
+
+   <div class="container mt-4">
+      <h1 class="catalog-title" style="font-size: 1.5rem; color: #53bc85; border-radius: 5px;">Catálogo en línea</h1>
+
+      <!-- Filtros de categorías (Pestañas dinámicas) -->
+      <div class="mt-4">
+         <ul class="nav nav-tabs" id="myTab" role="tablist">
+            @foreach ($categorias as $categoria)
+               <li class="nav-item">
+                  <a class="nav-link" id="tab{{ $categoria->id }}-tab" data-toggle="tab" href="#tab{{ $categoria->id }}" role="tab" aria-controls="tab{{ $categoria->id }}" aria-selected="false">{{ $categoria->nombre }}</a>
+               </li>
             @endforeach
-        </div>
-        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
-        </a>
-    </div>
-</div>
-<!-- fashion section end -->
+            <li class="nav-item">
+               <a class="nav-link active" id="tab-all-tab" data-toggle="tab" href="#tab-all" role="tab" aria-controls="tab-all" aria-selected="true">Todas las categorías</a>
+            </li>
+         </ul>
 
+         <div class="tab-content" id="myTabContent">
+            @foreach ($categorias as $categoria)
+               <div class="tab-pane fade" id="tab{{ $categoria->id }}" role="tabpanel" aria-labelledby="tab{{ $categoria->id }}-tab">
+                  <div class="row mt-3">
+                     @foreach ($productos->where('categoria_id', $categoria->id) as $producto)
+                        <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-2">
+                           <div class="product-card">
+                              <div class="square-img" style="border: 1px solid #ddd; border-radius: 5px;">
+                                 <img src="{{ $producto->image_url }}" class="card-img-top product-image" alt="Imagen de {{ $producto->nombre }}" data-toggle="modal" data-target="#productModal{{ $producto->id }}">
+                              </div>
+                              <h5 class="product-title text-center mt-2">{{ $producto->nombre }}</h5>
+                           </div>
+                        </div>
+                     @endforeach
+                  </div>
+               </div>
+            @endforeach
 
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="footer_logo"><a href="index.html"><img src="imagesy/footer-logo.png"></a></div>
-            <div class="input_bt">
-               <input type="text" class="mail_bt" placeholder="Your Email" name="Your Email">
-               <span class="subscribe_bt" id="basic-addon2"><a href="#">Subscribe</a></span>
+            <!-- Pestaña Todas las categorías -->
+            <div class="tab-pane fade show active" id="tab-all" role="tabpanel" aria-labelledby="tab-all-tab">
+               <div class="row mt-3">
+                  @foreach ($productos as $producto)
+                     <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-2">
+                        <div class="product-card">
+                           <div class="square-img" style="border: 1px solid #ddd; border-radius: 5px;">
+                              <img src="{{ $producto->image_url }}" class="card-img-top product-image" alt="Imagen de {{ $producto->nombre }}" data-toggle="modal" data-target="#productModal{{ $producto->id }}">
+                           </div>
+                           <h5 class="product-title text-center mt-2">{{ $producto->nombre }}</h5>
+                        </div>
+                     </div>
+                  @endforeach
+               </div>
             </div>
-            <div class="footer_menu">
-               <ul>
-                  <li><a href="#">Best Sellers</a></li>
-                  <li><a href="#">Gift Ideas</a></li>
-                  <li><a href="#">New Releases</a></li>
-                  <li><a href="#">Today's Deals</a></li>
-                  <li><a href="#">Customer Service</a></li>
-               </ul>
-            </div>
-            <div class="location_main">Help Line  Number : <a href="#">+1 1800 1200 1200</a></div>
          </div>
       </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">© 2020 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
-         </div>
-      </div>
-      <!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="jsy/jquery.min.js"></script>
-      <script src="jsy/popper.min.js"></script>
-      <script src="jsy/bootstrap.bundle.min.js"></script>
-      <script src="jsy/jquery-3.0.0.min.js"></script>
-      <script src="jsy/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="jsy/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="jsy/custom.js"></script>
-      <script>
-         function openNav() {
-           document.getElementById("mySidenav").style.width = "250px";
-         }
-         
-         function closeNav() {
-           document.getElementById("mySidenav").style.width = "0";
-         }
-      </script>
-   </body>
+   </div>
+
+   <script>
+   document.querySelectorAll('.product-image').forEach(image => {
+      image.addEventListener('click', function() {
+         const imageUrl = this.src;
+         // Aquí obtenemos el nombre del producto a través de un atributo data o similar
+         const productName = this.alt.replace('Imagen de ', '');
+
+         Swal.fire({
+            title: productName,  // El título de la modal es el nombre del producto
+            html: `
+               <h2>${productName}</h2>  <!-- El nombre del producto también se incluye aquí -->
+               <img src="${imageUrl}" alt="Imagen del Producto" style="width: 100%; max-width: 300px; height: auto; border-radius: 8px;">
+            `,
+            showCloseButton: true,
+            closeButtonHtml: '&times;',  
+            focusConfirm: false,
+            confirmButtonText: `<span>Contacta al vendedor</span> <i class="fab fa-whatsapp"></i>`,
+            confirmButtonColor: '#25D366',
+            background: '#f8f9fa',
+            customClass: {
+               popup: 'custom-popup',
+               title: 'custom-title',
+               confirmButton: 'custom-button',
+               closeButton: 'custom-close-button'
+            },
+            showClass: {
+               popup: 'animate__animated animate__slideInRight',
+            },
+            hideClass: {
+               popup: 'animate__animated animate__slideOutRight',
+            },
+            preConfirm: () => {
+               const whatsappUrl = `https://wa.me/50671249806?text=Hola,%20me%20interesa%20el%20producto:%20${encodeURIComponent(productName)}`;
+               window.open(whatsappUrl, '_blank');
+            },
+            backdrop: `
+               rgba(0, 0, 0, 0.8)
+            `
+         });
+      });
+   });
+</script>
+
+</body>
 </html>

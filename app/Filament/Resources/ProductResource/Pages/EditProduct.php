@@ -1,7 +1,5 @@
 <?php
 
-
-
 namespace App\Filament\Resources\ProductResource\Pages;
 
 use App\Filament\Resources\ProductResource;
@@ -43,9 +41,14 @@ class EditProduct extends EditRecord
     {
         return [
             Actions\Action::make('createNewProduct')
-                ->label('New Product')
-                ->url(route('filament.admin.resources.products.create')) // Asegúrate de que esta ruta sea la correcta
-                ->color('success'), // Cambia el color según lo que necesites
+                ->label('Nuevo Producto')
+                ->url(route('filament.admin.resources.products.create'))
+                ->color('success'),
         ];
+    }
+
+    protected function afterSave(): void
+    {
+        $this->redirect($this->getResource()::getUrl('index'));
     }
 }

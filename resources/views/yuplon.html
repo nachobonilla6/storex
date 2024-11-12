@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acedu Site</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- Enlazamos el CSS externo -->
+</head>
+<body>
+    <nav class="navbar-custom navbar navbar-expand-lg navbar-light sticky-top">
+        <a class="navbar-brand" href="#" style="font-family: 'Roboto', sans-serif; color: white;">
+            Acedu Site
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white; font-family: 'Roboto', sans-serif;">Iniciar sesión</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <span class="nav-link" style="color: white; font-family: 'Roboto', sans-serif;">|</span>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white; font-family: 'Roboto', sans-serif;">Registro</a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                    <a class="nav-link" href="#" style="color: white; font-family: 'Roboto', sans-serif;"><i class="fas fa-globe-americas"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="catalog-title" style="font-size: 1rem; color: #53bc85; border-radius: 5px;">Catálogo en línea</h1>
+        <div class="header-container">
+
+            <div class="search-bar" style="border-radius: 5px;">
+                <form class="form-inline" style="border-radius: 5px;">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar productos" aria-label="Buscar" style="border-top-left-radius: 5px; border-bottom-left-radius: 5px;">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="border-top-right-radius: 5px; border-bottom-right-radius: 50;">Búsqueda</button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Mujer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Hombre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Tennis</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Todas las categorías</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">Coming soon...</div>
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">Coming soon...</div>
+                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">Coming soon...</div>
+                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
+                    <div class="row mt-3">
+                        <!-- Aquí podrías agregar productos -->
+                    </div>
+
+                    <div class="container mt-4">
+                        <div class="row">
+                            <!-- Producto 1 -->
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+                                <div class="product-card">
+                                    <div class="square-img">
+                                        <img src="product.png" class="card-img-top" alt="Nombre del producto 1">
+                                    </div>
+                                    <h5 class="product-title">Producto 1</h5>
+                                </div>
+                            </div>
+                    
+                            <!-- Producto 2 -->
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+                                <div class="product-card">
+                                    <div class="square-img">
+                                        <img src="product.png" class="card-img-top" alt="Nombre del producto 2">
+                                    </div>
+                                    <h5 class="product-title">Producto 2</h5>
+                                </div>
+                            </div>
+                    
+                            <!-- Producto 3 -->
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+                                <div class="product-card">
+                                    <div class="square-img">
+                                        <img src="product.png" class="card-img-top" alt="Nombre del producto 3">
+                                    </div>
+                                    <h5 class="product-title">Producto 3</h5>
+                                </div>
+                            </div>
+                    
+                            <!-- Producto 4 -->
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+                                <div class="product-card">
+                                    <div class="square-img">
+                                        <img src="product.png" class="card-img-top" alt="Nombre del producto 4">
+                                    </div>
+                                    <h5 class="product-title">Producto 4</h5>
+                                </div>
+                            </div>
+                    
+                            <!-- Producto 5 -->
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+                                <div class="product-card">
+                                    <div class="square-img">
+                                        <img src="product.png" class="card-img-top" alt="Nombre del producto 5">
+                                    </div>
+                                    <h5 class="product-title">Producto 5</h5>
+                                </div>
+                            </div>
+                    
+                            <!-- Producto 6 -->
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+                                <div class="product-card">
+                                    <div class="square-img">
+                                        <img src="product.png" class="card-img-top" alt="Nombre del producto 6">
+                                    </div>
+                                    <h5 class="product-title">Producto 6</h5>
+                                </div>
+                            </div>
+
+
+                            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-4">
+                                <div class="product-card">
+                                    <div class="square-img">
+                                        <img src="product.png" class="card-img-top" alt="Nombre del producto 6">
+                                    </div>
+                                    <h5 class="product-title">Producto 7</h5>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
