@@ -59,7 +59,7 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
          <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar" style="width: auto;">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscaxr</button>
          </form>
       </div>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
